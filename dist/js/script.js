@@ -19,3 +19,14 @@ hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('hamburger-active')
     navMenu.classList.toggle('hidden');
 });
+
+// Remove URL
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
