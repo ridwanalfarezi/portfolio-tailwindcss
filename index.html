@@ -25,22 +25,39 @@
                         <span class="hamburger-line origin-bottom-left ease-in-out transition duration-300"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                        <ul class="block lg:flex">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:dark:bg-transparent lg:dark:shadow-none dark:bg-dark dark:shadow-md dark:shadow-slate-600">
+                        <ul class="block lg:flex lg:items-center">
                             <li class="group">
-                                <a href="#hero" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300">Home</a>
+                                <a href="#hero" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300 dark:text-white">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300">About</a>
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300 dark:text-white">About</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300">Portfolio</a>
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300 dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#partners" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300">Partners</a>
+                                <a href="#partners" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300 dark:text-white">Partners</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300">Contact</a>
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary group-hover:scale-110 group-hover:-translate-x-2 transition duration-300 dark:text-white">Contact</a>
+                            </li>
+                            <li class="mx-3">
+                                <div class="flex items-center gap-2">
+                                    <svg class="svg-icon" width="20" viewBox="0 0 20 20">
+                                        <path fill="none" d="M5.114,5.726c0.169,0.168,0.442,0.168,0.611,0c0.168-0.169,0.168-0.442,0-0.61L3.893,3.282c-0.168-0.168-0.442-0.168-0.61,0c-0.169,0.169-0.169,0.442,0,0.611L5.114,5.726z M3.955,10c0-0.239-0.193-0.432-0.432-0.432H0.932C0.693,9.568,0.5,9.761,0.5,10s0.193,0.432,0.432,0.432h2.591C3.761,10.432,3.955,10.239,3.955,10 M10,3.955c0.238,0,0.432-0.193,0.432-0.432v-2.59C10.432,0.693,10.238,0.5,10,0.5S9.568,0.693,9.568,0.932v2.59C9.568,3.762,9.762,3.955,10,3.955 M14.886,5.726l1.832-1.833c0.169-0.168,0.169-0.442,0-0.611c-0.169-0.168-0.442-0.168-0.61,0l-1.833,1.833c-0.169,0.168-0.169,0.441,0,0.61C14.443,5.894,14.717,5.894,14.886,5.726 M5.114,14.274l-1.832,1.833c-0.169,0.168-0.169,0.441,0,0.61c0.168,0.169,0.442,0.169,0.61,0l1.833-1.832c0.168-0.169,0.168-0.442,0-0.611C5.557,14.106,5.283,14.106,5.114,14.274 M19.068,9.568h-2.591c-0.238,0-0.433,0.193-0.433,0.432s0.194,0.432,0.433,0.432h2.591c0.238,0,0.432-0.193,0.432-0.432S19.307,9.568,19.068,9.568 M14.886,14.274c-0.169-0.168-0.442-0.168-0.611,0c-0.169,0.169-0.169,0.442,0,0.611l1.833,1.832c0.168,0.169,0.441,0.169,0.61,0s0.169-0.442,0-0.61L14.886,14.274z M10,4.818c-2.861,0-5.182,2.32-5.182,5.182c0,2.862,2.321,5.182,5.182,5.182s5.182-2.319,5.182-5.182C15.182,7.139,12.861,4.818,10,4.818M10,14.318c-2.385,0-4.318-1.934-4.318-4.318c0-2.385,1.933-4.318,4.318-4.318c2.386,0,4.318,1.933,4.318,4.318C14.318,12.385,12.386,14.318,10,14.318 M10,16.045c-0.238,0-0.432,0.193-0.432,0.433v2.591c0,0.238,0.194,0.432,0.432,0.432s0.432-0.193,0.432-0.432v-2.591C10.432,16.238,10.238,16.045,10,16.045"></path>
+                                    </svg>
+                                    <input type="checkbox" id="dark-toggle" hidden>
+                                    <label for="dark-toggle" class="cursor-pointer">
+                                        <div class="flex w-9 h-5 rounded-full bg-secondary items-center shadow-md">
+                                            <div class="w-4 h-4 rounded-full bg-white toggle-circle"></div>
+                                        </div>
+                                    </label>
+                                    
+                                    <svg class="svg-icon" viewBox="0 0 20 20">
+                                        <path fill="none" d="M10.544,8.717l1.166-0.855l1.166,0.855l-0.467-1.399l1.012-0.778h-1.244L11.71,5.297l-0.466,1.244H10l1.011,0.778L10.544,8.717z M15.986,9.572l-0.467,1.244h-1.244l1.011,0.777l-0.467,1.4l1.167-0.855l1.165,0.855l-0.466-1.4l1.011-0.777h-1.244L15.986,9.572z M7.007,6.552c0-2.259,0.795-4.33,2.117-5.955C4.34,1.042,0.594,5.07,0.594,9.98c0,5.207,4.211,9.426,9.406,9.426c2.94,0,5.972-1.354,7.696-3.472c-0.289,0.026-0.987,0.044-1.283,0.044C11.219,15.979,7.007,11.759,7.007,6.552 M10,18.55c-4.715,0-8.551-3.845-8.551-8.57c0-3.783,2.407-6.999,5.842-8.131C6.549,3.295,6.152,4.911,6.152,6.552c0,5.368,4.125,9.788,9.365,10.245C13.972,17.893,11.973,18.55,10,18.55 M19.406,2.304h-1.71l-0.642-1.71l-0.642,1.71h-1.71l1.39,1.069l-0.642,1.924l1.604-1.176l1.604,1.176l-0.642-1.924L19.406,2.304z"></path>
+                                    </svg>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -50,22 +67,22 @@
     </header>
 
     <!-- Hero -->
-    <section id="hero" class="pt-36">
+    <section id="hero" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="text-base font-semibold text-primary md:text-xl">Hello there, I'm 
-                        <span class="block text-dark font-bold text-4xl mt-1 lg:text-6xl">Ridwan Alfarezi</span>
+                        <span class="block text-dark font-bold text-4xl mt-1 lg:text-6xl dark:text-white">Ridwan Alfarezi</span>
                     </h1>
-                    <h2 class="font-medium text-secondary text-lg mb-3 lg:text-xl">Student & <span class="text-dark">Web Developer</span></h2>
-                    <p class="font-medium text-secondary mb-10">Everyone is <span class="font-bold text-dark">developer</span> for their own self</p>
+                    <h2 class="font-medium text-secondary text-lg mb-3 lg:text-xl">Student & <span class="text-dark dark:text-white">Web Developer</span></h2>
+                    <p class="font-medium text-secondary mb-10">Everyone is <span class="font-bold text-dark dark:text-white">developer</span> for their own self</p>
 
-                    <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-cyan-400 transition duration-300 ease-in-out lg:px-10 lg:py-5 lg:text-xl">Reach Me</a>
+                    <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-cyan-400 transition duration-300 ease-in-out lg:px-10 lg:py-5 lg:text-xl dark:hover:shadow-md dark:hover:shadow-primary">Reach Me</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-0 lg-right-0">
-                        <img src="img/ridwan.png" alt="Ridwan Alfarezi" class="max-w-full mx-auto">
-                        <span class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2">
+                        <img src="img/ridwan.png" alt="Ridwan Alfarezi" class="relative z-10 max-w-full mx-auto">
+                        <span class="absolute -bottom-10 left-1/2 -translate-x-1/2">
                             <svg width="300" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#06B6D4" d="M38.5,-66.2C51.6,-59.1,65,-52.2,71.2,-41.2C77.5,-30.2,76.5,-15.1,76.5,0C76.6,15.2,77.7,30.3,70.9,40.4C64.1,50.4,49.4,55.3,36.3,57.7C23.1,60,11.6,60,0,60C-11.6,60,-23.2,60.2,-35.8,57.5C-48.3,54.7,-61.7,49,-65.2,39C-68.6,28.9,-62.2,14.4,-59.3,1.7C-56.4,-11.1,-56.9,-22.1,-55.9,-36.5C-54.9,-50.8,-52.3,-68.4,-42.7,-77.5C-33.1,-86.5,-16.6,-87.1,-1.9,-83.7C12.7,-80.4,25.4,-73.2,38.5,-66.2Z" transform="translate(100 100) scale(1.1)" />
                               </svg>
@@ -79,17 +96,17 @@
     <!-- End of Hero -->
 
     <!-- About -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-[72%]">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-5xl">Personal info</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-5xl dark:text-white">Personal info</h2>
                     <p class="text-secondary font-medium text-base max-w-lg md:max-w-3xl lg:text-lg">Hello, my name is Ridwan Alfarezi. I am currently 17 years old and currently studying at 69 Jakarta State Vocational High School majoring in Network and Application Informatics Systems. The reason I majored in Network and Application Informatics Systems is that I want to learn a lot about the world of Information Technology. After entering the SIJA major, I found my interest in Web Development. I'm currently studying web programming languages such as HTML, CSS and JavaScript. I also learn some Frameworks like Bootstrap, TailwindCSS and React.
                     </p>
                 </div>
                 <div class="w-full px-4 lg:w-[28%]">
-                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-4xl lg:pt-12">Let's be friends</h3>
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-4xl lg:pt-12 dark:text-white">Let's be friends</h3>
                     <p class="font-medium text-secondary mb-6 text-base lg:text-lg">I'm currently availabe on social media!</p>
                     <div class="flex items-center">
                         <!-- Github -->
@@ -130,12 +147,12 @@
     <!-- End of About -->
 
     <!-- Portfolio -->
-    <section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">My Projects</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">My Projects</h2>
                     <p class="text-base font-medium text-secondary md:text-lg">Every project that I've built recently</p>
                 </div>
             </div>
@@ -144,28 +161,28 @@
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/portfolio/landing-page.png" alt="landing-page" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl">Landing Page</h3>
+                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl dark:text-white">Landing Page</h3>
                     <p class="font-medium text-base text-secondary">My first Landing Page that I built with Bootstrap Framework.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/portfolio/sija.png" alt="Web SIJA" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl">SIJA 69 Website</h3>
+                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl dark:text-white">SIJA 69 Website</h3>
                     <p class="font-medium text-base text-secondary">Since I'm a student from the SIJA Major so I created a Website for this major.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/portfolio/blog.png" alt="landing-page" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl">Blog</h3>
+                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl dark:text-white">Blog</h3>
                     <p class="font-medium text-base text-secondary">Simple Blog Page.</p>
                 </div>
                 <div class="mb-12 p-4 md:w-1/2">
                     <div class="rounded-md shadow-md overflow-hidden">
                         <img src="img/portfolio/maritory.png" alt="landing-page" width="w-full">
                     </div>
-                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl">E-commerce</h3>
+                    <h3 class="font-semibold text-dark mt-5 mb-3 text-xl dark:text-white">E-commerce</h3>
                     <p class="font-medium text-base text-secondary">
                         I build an e-commerce wedding web application currenttly.</p>
                 </div>
@@ -234,12 +251,12 @@
     <!-- End of Partners -->
 
     <!-- Contact -->
-    <section id="contact" class="pt-36 pb-16">
+    <section id="contact" class="pt-36 pb-16 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Me</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Contact Me</h2>
                     <p class="text-base font-medium text-secondary md:text-lg">Send your message here</p>
                 </div>
             </div>
@@ -346,6 +363,12 @@
         </div>
     </footer>
     <!-- End of Footer -->
+
+    <!-- Button to Top -->
+    <a href="#hero" class="h-14 w-14 fixed bg-primary rounded-full z-[999] bottom-8 right-10 p-4 flex justify-center items-center" id="to-top">
+        <span class="mt-2 block w-5 h-5 border-t-4 rotate-45 border-l-4"></span>    
+    </a>
+    <!-- End of Button to Top -->
 
     <script src="dist/js/script.js"></script>
 </body>
