@@ -261,22 +261,25 @@
                 </div>
             </div>
 
-            <form>
+            <form name="ridwan-contact-form">
                 <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="alert hidden w-1/2 transition-all mx-auto px-4 mb-8 bg-primary font-medium py-3 rounded-xl shadow-lg">
+                        <p class="text-xl tracking-widest text-slate-800 dark:text-white text-center">Your Message has been sent!</p>
+                    </div>
                     <div class="w-full px-4 mb-8">
                         <label for="name" class="font-bold text-primary text-base ml-2 lg:text-xl">Name</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-dark rounded-full py-2 px-3 focus:bg-white focus:outline-primary focus:ring-1 focus:ring-primary focus:border-primary transition duration-300 mt-1">
+                        <input type="text" name="name" id="name" class="w-full bg-slate-200 text-dark rounded-full py-2 px-3 focus:bg-white focus:outline-primary focus:ring-1 focus:ring-primary focus:border-primary transition duration-300 mt-1">
                     </div>
                     <div class="w-full px-4 mb-8">
                         <label for="email" class="font-bold text-primary text-base ml-2 lg:text-xl">Email</label>
-                        <input type="email" id="email" class="w-full bg-slate-200 text-dark rounded-full py-2 px-3 focus:bg-white focus:outline-primary focus:ring-1 focus:ring-primary focus:border-primary transition duration-500 mt-1">
+                        <input type="email" name="email" id="email" class="w-full bg-slate-200 text-dark rounded-full py-2 px-3 focus:bg-white focus:outline-primary focus:ring-1 focus:ring-primary focus:border-primary transition duration-500 mt-1">
                     </div>
                     <div class="w-full px-4 mb-8">
                         <label for="message" class="font-bold text-primary text-base ml-2 lg:text-xl">Message</label>
-                        <textarea name="message" id="message"  class="w-full bg-slate-200 text-dark rounded-2xl py-3 px-3 focus:bg-white focus:outline-primary focus:ring-1 focus:ring-primary focus:border-primary mt-1 h-36 resize-none transition duration-500"></textarea>
+                        <textarea name="message" id="message" class="w-full bg-slate-200 text-dark rounded-2xl py-3 px-3 focus:bg-white focus:outline-primary focus:ring-1 focus:ring-primary focus:border-primary mt-1 h-36 resize-none transition duration-500"></textarea>
                     </div>
                     <div class="w-full px-4 mb-8">
-                        <button class="bg-primary text-white px-8 py-3 rounded-full w-full font-semibold text-base hover:opacity-80 hover:shadow-lg transition duration-500 lg:text-xl">Kirim</button>
+                        <button type="submit" class="bg-primary text-white px-8 py-3 rounded-full w-full font-semibold text-base hover:opacity-80 hover:shadow-lg transition duration-500 lg:text-xl">Kirim</button>
                     </div>
                 </div>
             </form>

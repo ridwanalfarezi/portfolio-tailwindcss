@@ -34,25 +34,29 @@ window.addEventListener("click", function (e) {
 
 // Dark Toggle
 
-const darkToggle = document.querySelector('#dark-toggle');
-const html = document.querySelector('html');
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
 
-darkToggle.addEventListener('click', function () {
-  if(darkToggle.checked) {
-    html.classList.add('dark');
-    localStorage.theme = 'dark';
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    html.classList.add("dark");
+    localStorage.theme = "dark";
   } else {
-    html.classList.remove('dark');
-    localStorage.theme = 'light';
-  }  
+    html.classList.remove("dark");
+    localStorage.theme = "light";
+  }
 });
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
-  darkToggle.checked = true
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+  darkToggle.checked = true;
 } else {
-  document.documentElement.classList.remove('dark')
-  darkToggle.checked = false
+  document.documentElement.classList.remove("dark");
+  darkToggle.checked = false;
 }
 
 // Remove URL
@@ -64,4 +68,20 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       behavior: "smooth",
     });
   });
+});
+
+// Apps Script
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyUctH3V0o5ldpOEI6J9ILIjrUBhf8BWWAgAtE5YpB8W83b7812iPoXj2fnyPfxXvcO-g/exec";
+const form = document.forms["ridwan-contact-form"];
+const alert = document.querySelector('.alert');
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      alert.classList.toggle('hidden');
+      form.reset();
+      console.log("Success!", response);
+    })
+    .catch((error) => console.error("Error!", error.message));
 });
